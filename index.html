@@ -1,0 +1,656 @@
+<!-- HELLO
+-
+DevFolio is a minimal, clean, lightweight and fully responsive template for Devlopers!
+Created by Anil Seervi.
+-
+GitHub repo: https://github.com/AnilSeervi/DevFolio
+README: https://github.com/AnilSeervi/DevFolio/blob/master/README.md
+-
+Have fun creating your portfolio on this template!!! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
+    <!-- Title: add your Portfolio websites's title here -->
+    <title>[Mingjie Xu] | Developer Portfolio</title>
+
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[Mingjie Xu], Mingjie Xu, Portfolio, Game engineer, C#, C++, Unity" />
+
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Portfolio page of Mingjie Xu, Game Developer" />
+
+    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
+    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+
+    <!-- Add your primary-theme color for the value of content -->
+    <meta name="theme-color" content="#36d1dc" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <!-- Fill content with the URL of this portfolio you'll host -->
+    <meta property="og:url" content="https://devfolio.js.org/" />
+    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
+    <meta property="og:title" content="[Your name here] | Developer" />
+    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
+    <meta property="og:description" content="Made using DevFolio Template" />
+    <!-- Add a thumbnail image in assets folder and fill the content attr with URL to that thumbnail 
+      so that a thumbnail image of your portfolio is shown while shared on other platform -->
+    <meta
+      property="og:image"
+      content="https://devfolio.js.org/assets/devfolio.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <!-- Again fill content attr with the URL of this portfolio you'll host -->
+    <meta property="twitter:url" content="https://devfolio.js.org" />
+    <!-- Recommended to use the same text used within <title> element -->
+    <meta property="twitter:title" content="[Your name here] | Developer" />
+    <!-- short description that shows up while your portfolio is shared -->
+    <meta
+      property="twitter:description"
+      content="Made using DevFolio Template"
+    />
+    <!-- Fill content with the URL to the thumbnail image that you'll put in the assets folder -->
+    <meta
+      property="twitter:image"
+      content="https://anilseervi.vercel.app/assets/devfolio.png"
+    />
+
+    <!-- link tags -->
+    <link rel="preload" as="style" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <!-- FontAwesome Icons link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="./javascript/scrollreveal.min.js"></script>
+    <script
+      defer
+      type="text/javascript"
+      src="./javascript/scrollveal.js"
+    ></script>
+
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <div id="hero">
+      <section class="container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="text-color-main name">Mingjie Xu</span>
+          <br />
+          I'm a Utah MEAE student, also a Game Developer.
+        </h1>
+        <p class="hero-cta">
+          <a class="cta-btn cta-btn--hero" href="#about">More about me</a>
+        </p>
+      </section>
+      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
+        <div class="scroll-down"></div
+      ></a>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row about-wrapper">
+          <div class="about-wrapper__image">
+            <img
+              class="img-fluid"
+              src="./assets/my_profile.jpg"
+              alt="Profile Image"
+              width="450"
+              height="350"
+            />
+          </div>
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              I am a enthusiasm game developer and player from China. Now I am chasing
+               my gaming dream in the MEAE program in the University of Utah.
+            </p>
+            <p class="about-wrapper__info-text">
+              By self-learning C# and Unity engine from zero, I had made several games
+              through my college life. The process of making the games from scratch makes 
+              me happy. I feel even happier looking players enjoying them.            
+            </p>
+            <p class="about-wrapper__info-text">
+              Since I commited most of my work on gitee.com, and its policy 
+              did not allow users to have too many public repositories, I may not 
+              be able to post my code. If you want to check my code, feel free to contact me. :)
+            </p>
+            <span class="about-wrapper__cta">
+              <a href="https://csohqaq.itch.io/" 
+              target="_blank"
+              rel="noopener noreferrer" 
+              class="cta-btn cta-btn--resume">Check my itch.io</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!--Projects Section-->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">My Game Demos</h2>
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Dark Spells (September 2021)</h3>
+              <p class="project-wrapper__text-info">
+                This is the first game project I participated. I worked on enemy design and engineering,
+                map design, and sound system.
+              </p>
+              <p class="project-wrapper__text-info">
+                This game is a 2D soul-like game, and with a lore based on Touhou Project. 
+                The main character wakes up in the graveyard knowing nothing about herself. Through exploring the dangerous world, she gradually gets to realize the mystery about herself and the approaching disaster. 
+              </p>
+              <p class="project-wrapper__text-info">
+                Since the game producer is still developing this game, I 
+                may not be able to provide a playable demo. Hope to see this game soon :)
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://www.bilibili.com/video/BV1fv411g7Hx/ "
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >See Gameplay Video (old version)</a
+                >                
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Dark Spells/Gameplay (2).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Dark Spells/Gameplay (4).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div><div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Dark Spells/Gameplay (3).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Sweep Jumping mine (July 2021)</h3>
+              <p class="project-wrapper__text-info">
+                This is the game demo I made with another programmer in 2021 CiGA Gamejam. 
+                It was the first time for me to join a gamejam. 
+                I worked on game design and part of programming.
+              </p>
+              <p class="project-wrapper__text-info">
+                This game is a combination of Chinese checkers and Mine Sweeping. 
+                In this game, two players need to move their mines and defuse opponent's mines.                
+              </p>
+              <p class="project-wrapper__text-info">
+                Without any artists, this game isn't very attractive. 
+                This taught me an important lesson: do not hesitate to cooperate.
+              </p>            
+          </div>
+          <div class="project-wrapper__image">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <div class="thumbnail rounded">
+                <img
+                  src="./assets/2021CiGAGJ.jpg"
+                  class="img-fluid"
+                  alt="Project Image"
+                  width="960"
+                  height="432"
+                />
+                <figcaption style="color: black;">Me and my teammate at the end of gamejam </figcaption>
+              </div>
+            </a>
+          </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Cyber Magpie Bridge (May 2022)</h3>
+              <p class="project-wrapper__text-info">
+                This is a game I made with two friends in a local gamejam. I worked as game designer, and programmer.
+              </p>             
+              <p class="project-wrapper__text-info">
+                In this game, player runs a dating agency and needs to choose the best partner for the customers. 
+                The better couple is made, the more player earns. And certain couple may have certain effect to the continuing story.
+              </p>
+
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://csohqaq.itch.io/cyber-magpie-bridge"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >View it at itch.io</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Cyber Magpie Bridge/Gameplay (2).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div><div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Cyber Magpie Bridge/Gameplay (1).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Halloween Trick (June 2022)</h3>
+              <p class="project-wrapper__text-info">
+                This is a 2D vampire-survivor like game made for 2022 CiGA Gamejam. 
+                In this gamejam, I led a group of three, and worked as game designer and engineer.
+              </p>
+              <p class="project-wrapper__text-info">
+                In this game, player needs to treat the incoming kids with the candy. 
+                Every kid satisfied gives player exp, and player gets a random upgrade from the base when level up. 
+                After the end of each night, player can buy upgrades or remove the upgrade in the base.
+              </p>
+              <p class="project-wrapper__text-info">
+                In Vampire Survivor, player needs to keep moving around randomly to stay alive. 
+                However in this game, I created two defensive towers to encourage player to make a more strategic move. 
+                Since these towers require players to stay close, or they will run out of power in a short time.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://csohqaq.itch.io/halloween-trick"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >View it at itch.io</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Halloween Trick/Gameplay (2).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Halloween Trick/Gameplay (3).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Halloween Trick/Gameplay (1).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Halloween Trick/Gameplay (4).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+           <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Run in maze (December 2022)</h3>
+              <p class="project-wrapper__text-info">
+                This game is made for CIS 2022 online program.
+                 I made this game with three teammates.
+                 I worked as game designer, programmer, and made the input system, 
+                 AI pathfinding algorithm, maze generation, fog system and vision system.
+              </p>
+              <p class="project-wrapper__text-info">
+                In this game, player needs to explore the unknown maze, collect the lost treasure, 
+                escape from the monster, and find the stairs to the next floor.
+              </p>
+              <p class="project-wrapper__text-info">
+                This game is done with pygame on python, which doesn't have much plug-and-play function. 
+                Therefore, I made a simple engine for teammates to use. This made our development fast and smooth.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://csohqaq.itch.io/run-in-maze"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >View it at itch.io</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Run in maze/Gameplay(1).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Run in maze/Gameplay(2).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+           <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Wilderness (June 2023)</h3>
+              <p class="project-wrapper__text-info">
+                I created this game alone just for fun, also to try the URP and 2D light system in Unity.                
+              </p>
+              <p class="project-wrapper__text-info">
+                In this game, player needs to survive in a cold wild. Explore the wild, collect the resources, build the bonfire, and struggle through the night.
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://csohqaq.itch.io/wilderness"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >View it at itch.io</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Wilderness/Gameplay (1).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Wilderness/Gameplay (2).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Wilderness/Gameplay (3).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+          </article>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <article class="row">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Space Fart War (July 2023)</h3>
+              <p class="project-wrapper__text-info">
+                This game is made for CiGA gamejam 2023, with a group of three. 
+                I worked as game designer and programmer.
+              </p>
+              <p class="project-wrapper__text-info">
+                This is a local multiplayer game where two spacemen trying to push their
+                opponent out of screen or knock him out. Players can only use the mysterious 
+                "gas" or hook to move. And be careful, there are no resistantce in space...
+              </p>
+              <div class="project-wrapper__text-btns">
+                <a
+                  href="https://csohqaq.itch.io/space-fart-war"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="cta-btn cta-btn--hero cta-btn--projects"
+                  >View it at itch.io</a
+                >
+              </div>
+            </div>
+
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Space Fart War/Gameplay (1).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Space Fart War/Gameplay (2).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Space Fart War/Gameplay (3).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Space Fart War/Gameplay (4).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="project-wrapper__image">
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <div class="thumbnail rounded">
+                  <img
+                    src="./assets/Space Fart War/Gameplay (5).png"
+                    class="img-fluid"
+                    alt="Project Image"
+                    width="1366"
+                    height="767"
+                  />
+                </div>
+              </a>
+            </div>
+            
+          </article>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+     
+
+    
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">Phone: 3852166551</p>
+          <p class="contact-wrapper__text">Mail: xumingjie_uestc@126.com</p>
+        </div>
+      </div>
+    </section>
+    <!-- END Contact Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#hero" class="back-to-top" aria-label="go back to top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+        <hr />
+        <p class="footer__text">
+          &copy; <span id="year"></span> - Template by
+          <a
+            href="https://github.com/AnilSeervi"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Anil Seervi</a
+          >. <br />Made with &hearts;
+        </p>
+      </div>
+    </footer>
+    <!-- END Footer Section -->
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear()
+    </script>
+    <script src="./javascript/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="./javascript/valtilt.js"></script>
+  </body>
+</html>
